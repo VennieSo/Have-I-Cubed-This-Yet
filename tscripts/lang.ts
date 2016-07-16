@@ -1,5 +1,5 @@
 ﻿var lang = {
-//    culture: ko.observable("de"),
+    //    culture: ko.observable("de"),
     selectedLang: ko.observable('default'),
     culture: ko.observable(navigator.userLanguage || navigator.language),
     "bothSettingsHeader": function () {
@@ -14,7 +14,7 @@
         }
     },
     "updateNoticeHeader": function () {
-        return "With the update to 2.4, would you like to convert all of your seasonal items to non-seasonal? This action cannot be undone.";
+        return "With the update to 2.4.1, would you like to convert all of your seasonal items to non-seasonal? This action cannot be undone.";
     },
     "showBothProgressBar": function () {
         switch (this.selectedLang()) {
@@ -1152,8 +1152,6 @@
 
                             case "Wyrdschutz":
                                 return new Kanai.Equipment("Wyrdward", "Lightning damage has a 35% chance to Stun for 1.5 seconds.");
-
-
                         }
                     }
                 default:
@@ -2013,14 +2011,10 @@
 
                             default:
                                 return item;
-
                         }
                     }
-
-
             }
         } catch (ex) {
-
         }
     },
     getArmor(target, culture?: string) {
@@ -2277,7 +2271,6 @@
                     target.push(ko.observable(new Kanai.Equipment('Schreckenseisen', "'Aufstampfen' erzeugt einen 'Erdrutsch'")));
                     target.push(ko.observable(new Kanai.Equipment('Eiskletterer', 'Ihr erhaltet Immunität gegen Einfrierungs- und Bewegungsunfähigkeitseffekte')));
                     break;
-
                 }
         }
     },
